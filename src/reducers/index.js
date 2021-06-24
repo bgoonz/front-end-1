@@ -8,7 +8,8 @@ import {
   eventReducer
 } from "./eventReducer";
 
-export const rootReducer = combineReducers( {
+ const rootReducer = combineReducers( {
   userReducer: userReducer,
   eventReducer: eventReducer,
 } );
+export default rootReducer;

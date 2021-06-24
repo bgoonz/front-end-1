@@ -3,6 +3,7 @@ export const LOAD_DATA = 'LOAD_DATA';
 export const SET_EVENTS = 'SET_EVENTS';
 export const DELETE_EVENT = 'DELETE_EVENT';
 export const EDIT_EVENT = 'EDIT_EVENT';
+export const ADD_EVENT_FAILURE = 'ADD_EVENT_FAILURE';
 
 const setEvents = ( events ) => {
   return {
@@ -32,9 +33,19 @@ const editEvent = ( event ) => {
   };
 };
 
+
+const addEventFailure = ( event ) => {
+  return {
+    type: ADD_EVENT_FAILURE,
+    payload: event
+  };
+};
+
 export {
   setEvents,
   addEvent,
   deleteEvent,
-  editEvent
+  editEvent,
+  addEventFailure
+  
 };
